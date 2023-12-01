@@ -1,0 +1,65 @@
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+
+body {
+    width :90%;
+    padding:10% 4%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:$VeryLightGray;
+    font-family:'poppins', sans-serif;
+    font-weight:400;
+    color:$GrayishBlue;
+    
+
+}
+
+.title {
+    color:$VeryDarkBlue;
+    line-height: 10%;
+}
+
+.title__page {
+    font-weight:200;
+    font-size:150%;
+    
+}
+
+.container {
+    width:95%;
+    margin:0.5rem;
+    padding-bottom:2rem;
+    background-color: white;
+    border-radius:0.5rem;
+    box-shadow: 5px 5px 5px $VeryDarkBlue;
+    padding-left:0.5rem;
+    padding-right:0.7rem;
+    img {
+        float:right;
+    }
+}
+
+.container--cyan {
+    border-top:0.3rem solid $Cyan;
+}
+
+.container--red {
+    border-top:0.3rem solid $Red;
+}
+
+.container--orange {
+    border-top:0.3rem solid $Orange;
+}
+
+.container--blue {
+    border-top:0.3rem solid $Blue;
+}
