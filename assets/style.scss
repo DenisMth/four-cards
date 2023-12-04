@@ -8,7 +8,7 @@ $GrayishBlue: hsl(229, 6%, 66%);
 $VeryLightGray: hsl(0, 0%, 98%);
 
 
-body {
+body, header{
     width :90%;
     padding:10% 4%;
     display:flex;
@@ -37,7 +37,7 @@ body {
 .container {
     width:95%;
     margin:0.5rem;
-    padding-bottom:2rem;
+    padding-bottom:5rem;
     background-color: white;
     border-radius:0.5rem;
     box-shadow: 5px 5px 5px $VeryDarkBlue;
@@ -62,4 +62,32 @@ body {
 
 .container--blue {
     border-top:0.3rem solid $Blue;
+}
+
+@media screen and (min-width:800px) {
+    body, header{
+        padding:2%;
+
+    }
+    .container{
+        padding-bottom:2rem;
+    }
+    .container--block{
+        display:grid;
+        grid-template-columns:10fr 10fr 10fr 10fr 10fr;
+        gap:10px;
+    }
+    .container--cyan{
+        grid-area : 4/2/6/3;
+    }
+    .container--red{
+        grid-area: 3/3/5/4;
+    }
+    .container--orange{
+        grid-area: 5/3/7/4;
+    }
+    .container--blue{
+        grid-area: 4/4/6/5;
+    }
+    
 }
